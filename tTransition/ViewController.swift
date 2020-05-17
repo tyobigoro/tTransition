@@ -16,9 +16,9 @@ class GreenVC: UIViewController {
         super.viewDidLoad()
     }
 
+    // 遷移処理
     @IBAction func transitionToOrange(_ sender: Any) {
         
-        // createVC
         let toVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "OrangeVC")
         
         toVC.modalPresentationStyle = .overCurrentContext
